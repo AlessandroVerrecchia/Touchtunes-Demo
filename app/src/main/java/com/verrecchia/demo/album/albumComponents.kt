@@ -1,4 +1,4 @@
-package com.verrecchia.demo
+package com.verrecchia.demo.album
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -25,6 +25,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
+import com.verrecchia.demo.R
 import com.verrecchia.touchtunes_domain.Album
 
 @Composable

@@ -38,8 +38,10 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
-import androidx.core.view.WindowCompat
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.verrecchia.demo.album.AlbumDialog
+import com.verrecchia.demo.album.AlbumItem
+import com.verrecchia.demo.album.DemoViewModel
 import com.verrecchia.demo.album.Event
 import com.verrecchia.demo.album.Intent
 import com.verrecchia.demo.album.ViewState
@@ -110,6 +112,7 @@ class MainActivity : ComponentActivity() {
                 is ViewState.Empty -> EmptyScreen()
             }
         }
+        // meh
         selectedAlbum?.let { album ->
             AlbumDialog(album = album) { selectedAlbum = null }
         }

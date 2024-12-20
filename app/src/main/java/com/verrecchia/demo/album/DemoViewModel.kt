@@ -1,10 +1,7 @@
-package com.verrecchia.demo
+package com.verrecchia.demo.album
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.verrecchia.demo.album.Event
-import com.verrecchia.demo.album.Intent
-import com.verrecchia.demo.album.ViewState
 import com.verrecchia.touchtunes_domain.Album
 import com.verrecchia.touchtunes_domain.SearchAlbumUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
