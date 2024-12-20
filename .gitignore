@@ -1,0 +1,19 @@
+# Android Studio
+.idea/
+.gradle/
+local.properties
+*.iml
+
+# Build Folders
+/build/
+*/build/
+
+# Gradle Wrapper
+gradle/wrapper/gradle-wrapper.properties
+gradle/wrapper/gradle-wrapper.jar
+
+# Personal Configurations
+*.keystore
+*.jks
+.DS_Store
+
