@@ -1,7 +1,7 @@
-package com.verrecchia.itune_data
+package com.verrecchia.itunes_data
 
-import com.verrecchia.itune_data.model.AlbumDto
-import com.verrecchia.itune_data.model.toAlbum
+import com.verrecchia.itunes_data.model.AlbumDto
+import com.verrecchia.itunes_data.model.toAlbum
 import com.verrecchia.touchtunes_domain.Album
 import org.junit.Test
 

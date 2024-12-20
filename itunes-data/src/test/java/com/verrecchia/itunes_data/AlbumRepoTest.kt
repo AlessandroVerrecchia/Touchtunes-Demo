@@ -1,9 +1,9 @@
-package com.verrecchia.itune_data
+package com.verrecchia.itunes_data
 
-import com.verrecchia.itune_data.model.AlbumDto
-import com.verrecchia.itune_data.model.AlbumResponse
-import com.verrecchia.itune_data.network.ITuneAlbumRepository
-import com.verrecchia.itune_data.network.ITuneApiService
+import com.verrecchia.itunes_data.model.AlbumDto
+import com.verrecchia.itunes_data.model.AlbumResponse
+import com.verrecchia.itunes_data.network.ITuneAlbumRepository
+import com.verrecchia.itunes_data.network.ITuneApiService
 import com.verrecchia.touchtunes_domain.Album
 import io.mockk.coEvery
 import io.mockk.mockk

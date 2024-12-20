@@ -1,6 +1,6 @@
-package com.verrecchia.itune_data.network
+package com.verrecchia.itunes_data.network
 
-import com.verrecchia.itune_data.model.AlbumResponse
+import com.verrecchia.itunes_data.model.AlbumResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 

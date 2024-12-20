@@ -21,5 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Demo"
 include(":app")
-include(":itune-data")
+include(":itunes-data")
 include(":touchtunes-domain")

@@ -1,6 +1,6 @@
-package com.verrecchia.itune_data.network
+package com.verrecchia.itunes_data.network
 
-import com.verrecchia.itune_data.model.toAlbum
+import com.verrecchia.itunes_data.model.toAlbum
 import com.verrecchia.touchtunes_domain.Album
 import com.verrecchia.touchtunes_domain.AlbumRepository
 import javax.inject.Inject

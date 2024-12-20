@@ -60,7 +60,7 @@ dependencies {
 
     // Only domain should be needed, fix module setup ?
     implementation(project(":touchtunes-domain"))
-    implementation(project(":itune-data"))
+    implementation(project(":itunes-data"))
     // Hilt
     implementation(libs.hilt.android.v2511)
     kapt(libs.hilt.android.compiler.v2511)

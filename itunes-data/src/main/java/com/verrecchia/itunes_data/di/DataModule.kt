@@ -1,8 +1,8 @@
-package com.verrecchia.itune_data.di
+package com.verrecchia.itunes_data.di
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import com.verrecchia.itune_data.network.ITuneAlbumRepository
-import com.verrecchia.itune_data.network.ITuneApiService
+import com.verrecchia.itunes_data.network.ITuneAlbumRepository
+import com.verrecchia.itunes_data.network.ITuneApiService
 import com.verrecchia.touchtunes_domain.AlbumRepository
 import dagger.Binds
 import dagger.Module

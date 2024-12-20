@@ -1,4 +1,4 @@
-package com.verrecchia.itune_data.model
+package com.verrecchia.itunes_data.model
 
 import android.annotation.SuppressLint
 import com.verrecchia.touchtunes_domain.Album
