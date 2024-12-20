@@ -9,9 +9,13 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.asPaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.systemBars
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.text.KeyboardActions
@@ -34,6 +38,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
+import androidx.core.view.WindowCompat
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.verrecchia.demo.album.Event
 import com.verrecchia.demo.album.Intent
@@ -46,14 +51,22 @@ import kotlinx.coroutines.flow.SharedFlow
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContent {
             MaterialTheme {
                 val demoViewModel: DemoViewModel = hiltViewModel()
-                DemoScreen(
-                    viewState = demoViewModel.viewState.collectAsState().value,
-                    handleIntent = demoViewModel::handleIntent,
-                    event = demoViewModel.event
-                )
+
+                Box(
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(WindowInsets.systemBars.asPaddingValues())
+                ) {
+                    DemoScreen(
+                        viewState = demoViewModel.viewState.collectAsState().value,
+                        handleIntent = demoViewModel::handleIntent,
+                        event = demoViewModel.event
+                    )
+                }
             }
         }
     }
@@ -72,8 +85,9 @@ class MainActivity : ComponentActivity() {
                     is Event.ShowErrorToast -> {
                         Toast.makeText(context, currentEvent.message, Toast.LENGTH_SHORT).show()
                     }
+
                     is Event.ShowAlbumDetails -> {
-                        selectedAlbum = currentEvent.album // Show dialog with selected album
+                        selectedAlbum = currentEvent.album
                     }
                 }
             }

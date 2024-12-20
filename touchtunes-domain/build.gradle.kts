@@ -44,4 +44,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.hilt.android.v2511)
     kapt(libs.hilt.android.compiler.v2511)
+    testImplementation ("io.mockk:mockk:1.13.5")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
 }

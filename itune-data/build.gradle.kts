@@ -50,5 +50,9 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0")
     implementation ("com.squareup.okhttp3:okhttp:4.10.0")
+    testImplementation ("io.mockk:mockk:1.13.5")
+    testImplementation ("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+
+
 
 }
