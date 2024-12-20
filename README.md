@@ -55,4 +55,6 @@ Key Components:
 **Notes**
 - I had prior experience with Jetpack Compose, but I was still utilizing the MVVM pattern. This project provided a valuable opportunity to gain hands-on experience with the MVI architecture.
 - I leveraged this as an opportunity to learn Hilt, transitioning from my previous use of Dagger and Koin.
-- Additionally, I took this as a chance to explore Coil, moving away from my prior use of Glide.
+- I took this as a chance to explore Coil, moving away from my prior use of Glide.
+- Additionally, i used kotlin serielization to try something new since I always used moshi / gson.
+
